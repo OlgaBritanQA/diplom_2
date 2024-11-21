@@ -1,0 +1,95 @@
+{
+  "uuid": "3b739463-3e92-4c76-8da1-7d9500b2eb2f",
+  "historyId": "471f8ef867d7bdf5b1901c908408311",
+  "fullName": "org.example.UpdateUserTest.testUpdateEmailAndNameWithAuthorization",
+  "labels": [
+    {
+      "name": "package",
+      "value": "org.example"
+    },
+    {
+      "name": "testClass",
+      "value": "org.example.UpdateUserTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "testUpdateEmailAndNameWithAuthorization"
+    },
+    {
+      "name": "suite",
+      "value": "org.example.UpdateUserTest"
+    },
+    {
+      "name": "host",
+      "value": "Best-Komp"
+    },
+    {
+      "name": "thread",
+      "value": "15740@Best-Komp.main(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit4"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    }
+  ],
+  "links": [],
+  "name": "Update Both Email and Name with Authorization",
+  "status": "passed",
+  "stage": "finished",
+  "description": "Проверяем, что авторизованный пользователь может изменить как имя, так и почту.",
+  "steps": [
+    {
+      "name": "получение ответа при регистрации пользователя",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "request",
+          "value": "org.example.data.register.RegisterRequest@5246453e"
+        }
+      ],
+      "start": 1732182982996,
+      "stop": 1732182983608
+    },
+    {
+      "name": "получение ответа при авторизации пользователя",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "user",
+          "value": "org.example.data.register.User@515a2afd"
+        }
+      ],
+      "start": 1732182983608,
+      "stop": 1732182984647
+    },
+    {
+      "name": "получение ответа при авторизации пользователя",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "user",
+          "value": "org.example.data.register.User@515a2afd"
+        }
+      ],
+      "start": 1732182985620,
+      "stop": 1732182986511
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1732182982995,
+  "stop": 1732182986523
+}
