@@ -9,8 +9,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static org.example.util.Constants.BUN_R2_D3;
-import static org.example.util.Constants.MEAT_PROTOSTOMIA;
 import static org.hamcrest.Matchers.equalTo;
 
 public class CreateOrderTest extends BaseOrderTest {
@@ -18,7 +16,7 @@ public class CreateOrderTest extends BaseOrderTest {
     @DisplayName("Create Order with Authorization and Ingredients")
     @Description("Проверяем, что заказ можно создать с авторизацией и ингредиентами.")
     public void testCreateOrderWithAuthorizationAndIngredients() {
-        List<String> ingredients = Arrays.asList(BUN_R2_D3.getConstant(), MEAT_PROTOSTOMIA.getConstant());
+        List<String> ingredients = Arrays.asList(bunHash, mainHash);
 
         ValidatableResponse response = orderClient.createOrderResponse(token, ingredients);
         response.statusCode(200)
@@ -30,7 +28,7 @@ public class CreateOrderTest extends BaseOrderTest {
     @DisplayName("Create Order without Authorization but with Ingredients")
     @Description("Проверяем, что можно создать заказ без авторизации, но с ингредиентами.")
     public void testCreateOrderWithoutAuthorizationWithIngredients() {
-        List<String> ingredients = Arrays.asList(BUN_R2_D3.getConstant(), MEAT_PROTOSTOMIA.getConstant());
+        List<String> ingredients = Arrays.asList(bunHash, mainHash);
 
         ValidatableResponse response = orderClient.createOrderResponse(null, ingredients);
         response.statusCode(200)

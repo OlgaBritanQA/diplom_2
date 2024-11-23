@@ -7,6 +7,7 @@ import org.example.data.register.RegisterRequest;
 
 import static io.restassured.RestAssured.given;
 import static org.example.util.Constants.REGISTER_API;
+import static org.example.util.Constants.USER_API;
 
 public class RegisterClient {
     @Step("получение ответа при регистрации пользователя")
@@ -26,7 +27,7 @@ public class RegisterClient {
                 .header("Authorization", token)
                 .contentType(ContentType.JSON)
                 .when()
-                .delete("https://stellarburgers.nomoreparties.site/api/auth/user")
+                .delete(USER_API.getConstant())
                 .then();
     }
 

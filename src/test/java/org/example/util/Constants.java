@@ -8,11 +8,8 @@ public enum Constants {
     REGISTER_API("/api/auth/register"),
     LOGIN_API("/api/auth/login"),
     USER_API("/api/auth/user"),
-    ORDER_API("/api/orders"),
-
-    //Хеш ингидиентов, взят постманом из https://stellarburgers.nomoreparties.site/api/ingredients
-    MEAT_PROTOSTOMIA("61c0c5a71d1f82001bdaaa6f"),
-    BUN_R2_D3("61c0c5a71d1f82001bdaaa6d");
+    INGREDIENTS_API("/api/ingredients"),
+    ORDER_API("/api/orders");
 
     private final String constant;
 

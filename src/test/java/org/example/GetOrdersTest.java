@@ -8,15 +8,13 @@ import org.junit.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.example.util.Constants.BUN_R2_D3;
-import static org.example.util.Constants.MEAT_PROTOSTOMIA;
 import static org.hamcrest.Matchers.*;
 
 public class GetOrdersTest extends BaseOrderTest {
     @Override
     public void setUp() {
         super.setUp();
-        List<String> ingredients = Arrays.asList(BUN_R2_D3.getConstant(), MEAT_PROTOSTOMIA.getConstant());
+        List<String> ingredients = Arrays.asList(bunHash, mainHash);
 
         ValidatableResponse response = orderClient.createOrderResponse(token, ingredients);
         response.statusCode(200)
